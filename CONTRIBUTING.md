@@ -1,10 +1,18 @@
 # Contributing
 
-Thanks for your interest! This repo accompanies a YouTube video, so the goal is to keep it **simple, readable and safe**.
+Thanks for your interest! This repo accompanies a YouTube video and is maintained by its author only, so **pull requests are not accepted**.
 
-1. Fork the repo and create a branch.
-2. `python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements-dev.txt`
-3. Make your change **with a test**, then run `pytest -q`.
-4. Open a pull request describing what changed and why.
+You can still help:
 
-Out of scope: live-broker order placement, and anything that weakens the risk checks or the paper-trading default.
+- **Found a bug?** Open a [bug report](../../issues/new?template=bug_report.md).
+- **Have an idea or a strategy for a future video?** Open a [feature request](../../issues/new?template=feature_request.md).
+- **Security problem?** Report it privately, see [SECURITY.md](SECURITY.md).
+- **Want to experiment?** Fork the repo and change your copy however you like (MIT license).
+
+## Running it locally
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements-dev.txt
+pytest -q
+```

@@ -106,7 +106,7 @@ tests/
 
 ## Contributing & security
 
-Issues and PRs are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Please report security problems privately as described in [SECURITY.md](SECURITY.md).
+Questions, bugs and strategy ideas are welcome as [issues](../../issues). Pull requests aren't accepted (see [CONTRIBUTING.md](CONTRIBUTING.md)), but you're free to fork it. Please report security problems privately as described in [SECURITY.md](SECURITY.md).
 
 ## License
 
