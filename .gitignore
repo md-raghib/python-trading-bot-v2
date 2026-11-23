@@ -1,0 +1,13 @@
+.env
+config.yaml
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+state/*
+!state/.gitkeep
+logs/*
+!logs/.gitkeep
+data/*
+!data/.gitkeep
+reports/

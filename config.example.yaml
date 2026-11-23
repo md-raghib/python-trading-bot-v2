@@ -1,0 +1,39 @@
+# Copy to config.yaml and edit. Secrets (Telegram token) go in .env, never here.
+
+symbols: [RELIANCE.NS, TCS.NS, INFY.NS]   # Yahoo symbols (.NS = NSE)
+interval: 5m
+history_period: 5d        # how much history the paper loop downloads each poll
+poll_seconds: 30
+starting_cash: 100000
+
+# >>> Replace with the exact rules of your 2021 bot <<<
+strategy:
+  ema_period: 20
+  rsi_period: 14
+  rsi_buy: 30             # BUY when RSI crosses up through this AND close > EMA
+                          # (30 + "above EMA" rarely triggers on 5m NSE data; 50 = momentum version, ~70 trades/month on 5 stocks)
+  rsi_sell: 70            # EXIT when RSI reaches this OR close < EMA
+
+risk:                     # checked BEFORE every entry
+  max_trades_per_day: 5
+  max_loss_per_day: 2000
+  max_position_value: 50000
+  stop_loss_pct: 0.01
+  target_pct: 0.02
+
+# PLACEHOLDERS — set to your broker's real charges before trusting results
+costs:
+  brokerage_per_order: 20
+  brokerage_pct: 0.0003
+  other_charges_pct: 0.0004
+  slippage_bps: 5
+
+market_hours:             # IST
+  open: "09:15"
+  close: "15:30"
+  last_entry: "15:00"
+  square_off: "15:15"
+  holidays: []            # add NSE trading holidays, e.g. "2026-12-25"
+
+state_dir: state
+log_dir: logs
