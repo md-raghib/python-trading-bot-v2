@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/md-raghib/python-trading-bot-v2/actions/workflows/ci.yml/badge.svg)](https://github.com/md-raghib/python-trading-bot-v2/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.9%20%7C%203.12-blue)
+![Python](https://img.shields.io/badge/python-3.10%20%7C%203.13-blue)
 
 The 2021 Python trading bot from [this video](https://www.youtube.com/watch?v=JKZCM3TwG-Y), rebuilt with proper structure, honest backtests, risk limits and a DevOps-style deployment.
 
@@ -25,6 +25,8 @@ The 2021 Python trading bot from [this video](https://www.youtube.com/watch?v=JK
 | Positions lost on restart | Paper state saved to `state/paper_state.json` |
 
 ## Quick start
+
+Requires Python 3.9+ (CI tests 3.10 and 3.13).
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate

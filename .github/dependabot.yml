@@ -4,6 +4,8 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    # only bump the ">=" floors when a security fix or compatibility requires it
+    versioning-strategy: increase-if-necessary
   - package-ecosystem: github-actions
     directory: /
     schedule:
